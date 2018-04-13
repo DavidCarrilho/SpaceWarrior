@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_fundo"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jogo.uema.com.br.sw.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnJogar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSair"
+        android:layout_alignStart="@+id/btnSair"
+        android:layout_marginBottom="18dp"
+        android:background="@android:color/black"
+        android:onClick="onClick"
+        android:text="JOGAR"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSair"
+        android:layout_alignBottom="@+id/btnSair"
+        android:layout_marginStart="73dp"
+        android:layout_toEndOf="@+id/btnSair"
+        android:background="@android:drawable/ic_lock_silent_mode"
+        android:backgroundTint="@android:color/black"
+        android:onClick="jogoMudo"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@android:color/background_dark"
+        android:onClick="sair"
+        android:text="Sair"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
